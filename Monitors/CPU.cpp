@@ -93,7 +93,7 @@ void CPU::displayText()
     printw("CPU: ");
     move(7, 5);
     printw("Core %d", sysconf(_SC_NPROCESSORS_ONLN));
-    move(6, 5);
+    move(8, 5);
     printw("CPU Ratio:%f",
         100.0 * ((float) data.timeActive / (float) data.totalTime()));
     mvprintw(5, 5, "CPU model :%s", cpu_model.data());
